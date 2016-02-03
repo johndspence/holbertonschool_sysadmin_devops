@@ -1,0 +1,2 @@
+#!/bin/bash
+printf '%\n' "$((5#$(echo ewwatratewa | tr 'water' '01234')+5#12421231313))"
