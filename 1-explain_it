@@ -1,9 +1,0 @@
-1. Create a public/private key pair.
-2.  The public key should be shared (i.e. stored on the sandbox servers).
-It should be used to encrypt communication from the servers to me. 
-The public key has a mathematial relationship with the private key, such that communication
-encrypted with the public key can be decrypted using the private key, but it
-is computationally impractical to decrypt the communication (or determine the private key
-from the public key.
-3. The private key should be stored securely on my personal machine as it is as or more sensitive
-than a password.  It will be used to decrypt communication from the sandbox servers.
