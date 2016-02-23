@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat list | grep o | sort -d
+grep o list | sort -d | uniq
