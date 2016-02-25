@@ -3,4 +3,5 @@
 while read input
 do
     echo $input
-        done < holbertonschoolcom-nginx.log
+
+done < holbertonschoolcom-nginx.log
