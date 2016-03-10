@@ -1,0 +1,6 @@
+#!/bin/bash
+columns= $((("${COLUMNS:-$(tput cols)}")/3))
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" ' ' | tr ' ' '0'
+# printf '%d\n' $columns
+printf '%s\n' $columns
+

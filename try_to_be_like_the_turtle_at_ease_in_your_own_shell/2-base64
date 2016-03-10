@@ -1,2 +1,2 @@
 #!/bin/bash
-cat quote_encoded | base64 --decode
+cat $1 | base64 --decode
