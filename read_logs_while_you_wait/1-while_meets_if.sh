@@ -4,4 +4,4 @@ while read line
 do 
 	grep HEAD
 
-    done < holbertonschoolcom-nginx.log
+    done <$1
