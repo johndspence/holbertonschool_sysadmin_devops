@@ -11,7 +11,7 @@ do
 	elif echo $line | grep -q GET; then
     	((y++))
 	fi
-done < holbertonschoolcom-nginx.log
+done <$1
 
 echo $x
 echo $y
