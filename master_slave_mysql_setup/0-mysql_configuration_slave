@@ -84,13 +84,22 @@ log_error = /var/log/mysql/error.log
 # The following can be used as easy to replay backup logs or for replication.
 # note: if you are setting up a replication slave, see README.Debian about
 #       other settings you may need to change.
-server-id		= 2 
+server-id		= 2
+#master-host             = 158.69.70.204
+#master-user             = slave_user
+#master-password         = slaveusr204
+#master-connect-retry    = 60
+#replicate-do-db         = airbnb_dev
+#replicate-do-db         = airbnb_prod
+#replicate-do-db         = holbertonschool_db
+relay-log		= /var/log/mysql/mysql-relay-bin.log
 log_bin			= /var/log/mysql/mysql-bin.log
 expire_logs_days	= 10
 max_binlog_size         = 100M
 binlog_do_db		= airbnb_dev
+binlog_do_db            = airbnb_prod
+binlog_do_db            = holbertonschool_db
 #binlog_ignore_db	= include_database_name
-relay-log               = /var/log/mysql/mysql-relay-bin.log
 #
 # * InnoDB
 #
